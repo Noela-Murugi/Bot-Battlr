@@ -1,12 +1,12 @@
-import React from "react";
-import BotsPage from "./BotsPage";
+ import React from "react";
+ import BotsPage from "./BotsPage";
 
-function App() {
-  return (
-    <div className="App">
-      <BotsPage />
-    </div>
-  );
+ function App() {
+   return (
+     <div className="App">
+       <BotsPage />
+     </div>
+   );
 }
 
-export default App;
+ export default App;
