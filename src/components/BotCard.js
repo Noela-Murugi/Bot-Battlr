@@ -1,7 +1,40 @@
 import React from "react";
 
+// const classBotClasses = {
+//   Assault: "icon military",
+//   Defender: "icon shield",
+//   Support: "icon plus circle",
+//   Medic: "icon ambulance",
+//   Witch: "icon magic",
+//   Captain: "icon star",
+// };
+
 function BotCard(props) {
   let { bot } = props;
+  let classBot;
+
+  switch (bot.bot_class) {
+    case "Assault":
+      classBot = <i className="icon military" />;
+      break;
+    case "Defender":
+      classBot = <i className="icon shield" />;
+      break;
+    case "Support":
+      classBot = <i className="icon plus circle" />;
+      break;
+    case "Medic":
+      classBot = <i className="icon ambulance" />;
+      break;
+    case "Witch":
+      classBot = <i className="icon magic" />;
+      break;
+    case "Captain":
+      classBot = <i className="icon star" />;
+      break;
+    default:
+      classBot = <div />;
+  }
 
   return (
     <div className="ui column">
@@ -15,7 +48,7 @@ function BotCard(props) {
         </div>
         <div className="content">
           <div className="header">
-            {bot.name}
+            {bot.name} {classBot}
             {/* //             <i className={classBotClasses[bot.bot_class]} /> */}
           </div>
           <div className="meta text-wrap">
