@@ -14,7 +14,7 @@
      <div className="ui four column grid">
        <div className="row">
          {/*...and here..*/}
-         Collection of all bots
+       {/* <div className="heading"><p ><strong>Collection of all bots</strong></p></div> */}
 		 {renderBots()}
        </div>
      </div>
