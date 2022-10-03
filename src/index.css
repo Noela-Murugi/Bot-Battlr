@@ -22,3 +22,8 @@ body {
 .ui.grid {
   padding: 0px 20px;
 }
+
+.heading {
+  margin-bottom: 230px;
+  position: center;
+}

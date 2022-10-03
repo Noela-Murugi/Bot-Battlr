@@ -33,6 +33,7 @@
     default:
       classBot = <div />;
   }
+
    return (
      <div className="ui segment">
        <div className="ui two column centered grid">
@@ -85,6 +86,13 @@
                >
                 {bot.owned ? "Remove From My Army" : "Enlist"}
              </button>
+             {/* <button
+               className="ui button fluid"
+               onClick={() =>props.deleteSelectedBot(handleDeleteTransaction) }
+//                 console.log("connect this to a function that shows all bots")
+             >
+               Delete Bot
+             </button> */}
            </div>
          </div>
        </div>
